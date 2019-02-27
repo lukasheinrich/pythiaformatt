@@ -1,0 +1,11 @@
+--- Makefile	2019-02-27 12:22:48.555907000 +0100
++++ Makefile	2019-02-27 12:22:56.785907000 +0100
+@@ -28,7 +28,7 @@
+   PREFIX_LIB=../lib
+   PREFIX_INCLUDE=../include
+ endif
+-CXX_COMMON:=-I$(PREFIX_INCLUDE) $(CXX_COMMON) -Wl,-rpath $(PREFIX_LIB) -ldl
++CXX_COMMON:=-I$(PREFIX_INCLUDE) $(CXX_COMMON) -Wl,-rpath $(PREFIX_LIB) -ldl -std=c++11
+ 
+ ################################################################################
+ # RULES: Definition of the rules used to build the PYTHIA examples.

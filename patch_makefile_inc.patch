@@ -1,0 +1,18 @@
+--- Makefile.inc	2019-02-27 12:23:47.943625000 +0100
++++ Makefile.inc	2019-02-27 12:24:07.371276000 +0100
+@@ -70,10 +70,10 @@
+ PROMC_LIB=
+ 
+ # ROOT configuration.
+-ROOT_USE=false
+-ROOT_BIN=
+-ROOT_INCLUDE=
+-ROOT_LIB=
++ROOT_USE=true
++ROOT_BIN=/usr/local/bin/
++ROOT_INCLUDE=/usr/local/include
++ROOT_LIB=/usr/local/lib
+ 
+ # GZIP configuration.
+ GZIP_USE=false
+

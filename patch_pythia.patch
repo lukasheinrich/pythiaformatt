@@ -1,0 +1,17 @@
+--- include/Pythia8/ResonanceWidths.h	2019-02-27 12:18:47.797019000 +0100
++++ include/Pythia8/ResonanceWidths.h	2019-02-27 12:18:58.497019000 +0100
+@@ -72,11 +72,12 @@
+   double widthChan(double mHatIn, int idOutFlav1, int idOutFlav2) {
+     return width( 1, mHatIn, 0, false, false, idOutFlav1, idOutFlav2);}
+ 
+-protected:
+ 
+   // Constructor.
+   ResonanceWidths() {}
+ 
++protected:
++
+   // Constants: could only be changed in the code itself.
+   static const int    NPOINT;
+   static const double MASSMIN, MASSMARGIN;
+
